@@ -69,3 +69,56 @@ footer {
 .copyright {
     @apply mt-[2%] text-white text-sm;
 }
+/* PaginaInicial */
+#container_main {
+    @apply bg-[var(--cor-quartenaria)] max-w-[95vw] mx-auto shadow-[0px_2px_7px_rgba(0,0,0,0.185)] rounded-[5px];
+}
+
+#container_quem_somos,
+#container_diagnostico,
+#container_faq,
+#container_contato {
+    @apply pt-[2%] pb-0 pl-[2%];
+}
+
+#container_serviços,
+#container_escolher_porto,
+#container_usar_site {
+    @apply pt-[4%] pb-0 pl-[2%];
+}
+
+.titulo_main {
+    @apply text-[2.1rem];
+}
+
+.subtitulo {
+    @apply mt-1 text-[1.7rem];
+}
+
+.descritivo {
+    @apply mt-1 text-[1.1rem] w-[90vw];
+}
+
+.texto_imagem {
+    @apply flex;
+}
+
+.descritivo01 {
+    @apply w-[40vw] text-justify;
+}
+
+.imagem01 {
+    @apply rounded-[10px] border-[3px] border-[var(--cor-principal)] w-[35vw] ml-[10%];
+}
+
+.lista_main {
+    @apply list-none;
+}
+
+.li_main {
+    @apply flex items-center mt-2 text-[1.1rem] pb-2;
+}
+
+.icone_li {
+    @apply mr-1;
+}
