@@ -6,7 +6,7 @@ import { atualizarUsuarioPorId, Usuario, obterUsuarioPorId } from "../../../serv
 
 export default function EditarConta() {
   const [usuario, setUsuario] = useState<Usuario | null>(null);
-  const [loading, setLoading] = useState(true); // Estado de carregamento
+  const [loading, setLoading] = useState(true); 
   const router = useRouter();
 
   useEffect(() => {
@@ -14,20 +14,20 @@ export default function EditarConta() {
 
     if (!userId) {
       alert("Usuário não logado. Redirecionando para a página de login.");
-      router.push("/"); // Redireciona para a página de login se o usuário não estiver logado
+      router.push("/");
       return;
     }
 
     async function fetchUsuario() {
       try {
-        const idUsuario = userId ? parseInt(userId, 10) : 0; // Convertendo para número
-        const dadosUsuario = await obterUsuarioPorId(idUsuario); // Buscando os dados do usuário
+        const idUsuario = userId ? parseInt(userId, 10) : 0; 
+        const dadosUsuario = await obterUsuarioPorId(idUsuario); 
         setUsuario(dadosUsuario);
       } catch (error) {
         console.error("Erro ao carregar os dados do usuário:", error);
         alert("Erro ao carregar dados do usuário. Tente novamente mais tarde.");
       } finally {
-        setLoading(false); // Finaliza o estado de carregamento
+        setLoading(false); 
       }
     }
 
@@ -38,9 +38,9 @@ export default function EditarConta() {
     e.preventDefault();
     if (usuario) {
       try {
-        await atualizarUsuarioPorId(usuario.idUsuario, usuario); // Enviando os dados atualizados para a API
+        await atualizarUsuarioPorId(usuario.idUsuario, usuario); 
         alert("Dados atualizados com sucesso!");
-        router.push("/conta"); // Redirecionando para a página de conta
+        router.push("/conta"); 
       } catch (error) {
         console.error("Erro ao atualizar dados do usuário:", error);
         alert("Erro ao atualizar dados do usuário. Tente novamente.");
@@ -51,11 +51,11 @@ export default function EditarConta() {
   };
 
   if (loading) {
-    return <p>Carregando...</p>; // Exibe uma mensagem de carregamento
+    return <p>Carregando...</p>; 
   }
 
   if (!usuario) {
-    return <p>Nenhum usuário encontrado.</p>; // Mensagem caso não encontre o usuário
+    return <p>Nenhum usuário encontrado.</p>; 
   }
 
   return (

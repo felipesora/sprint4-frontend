@@ -12,7 +12,7 @@ export interface ProblemaCarro {
 export async function enviarProblema(dcProblema: string, tpPecaProblema: string) {
   const problema: ProblemaCarro = {
     dcProblema,
-    idCarro: 1, // ID fixo do carro; ajuste conforme necessário
+    idCarro: 1, // ID fixo do carro
     tpPecaProblema,
   };
 

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import { useRouter, usePathname } from 'next/navigation'; // Importando usePathname
+import { useRouter, usePathname } from 'next/navigation'; 
 
 import perfil from '../../imagens/icone-perfil.png';
 import linha from '../../imagens/icone-linha.png';
@@ -10,8 +10,8 @@ import logout from '../../imagens/icone-sair.png';
 import Menu from '../Menu/Menu';
 
 export default function Cabecalho() {
-    const router = useRouter(); // Usando useRouter de next/navigation
-    const pathname = usePathname(); // Obtendo o pathname atual
+    const router = useRouter(); 
+    const pathname = usePathname(); 
 
     const getTitulo = () => {
         switch (pathname) {
@@ -38,11 +38,11 @@ export default function Cabecalho() {
         if (typeof window !== 'undefined') {
             localStorage.removeItem("loggedIn");
         }
-        router.push("/"); // Usando router.push para navegação
+        router.push("/"); 
     }
 
     function handleConta() {
-        router.push("/conta"); // Usando router.push para navegação
+        router.push("/conta"); 
     }
 
     return (

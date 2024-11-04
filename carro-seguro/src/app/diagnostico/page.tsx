@@ -12,7 +12,7 @@ export default function Diagnostico() {
     const [precoTotal, setPrecoTotal] = useState<number>(0);
     const [mensagemResposta, setMensagemResposta] = useState<string>('');
     const [enviadoComSucesso, setEnviadoComSucesso] = useState<boolean>(false);
-    const [mostrarPecas, setMostrarPecas] = useState<boolean>(false); // Novo estado
+    const [mostrarPecas, setMostrarPecas] = useState<boolean>(false); 
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -22,7 +22,7 @@ export default function Diagnostico() {
             setDescricao('');
             setTipoProblema('');
             setEnviadoComSucesso(true);
-            setMostrarPecas(true); // Define como true para mostrar peças
+            setMostrarPecas(true); 
         } catch (error) {
             setMensagemResposta('Erro ao enviar o problema. Por favor, tente novamente.');
             console.error("Erro ao enviar problema:", error);
@@ -36,11 +36,11 @@ export default function Diagnostico() {
         if (novoTipoProblema) {
             try {
                 const resultadoPecas = await buscarPecasPorTipo(novoTipoProblema);
-                // Filtrar as peças para incluir apenas aquelas que correspondem ao tipo de problema
+                
                 const pecasFiltradas = resultadoPecas.filter(peca => peca.tpPecaProblema === novoTipoProblema);
                 setPecas(pecasFiltradas);
     
-                // Calcula a média dos preços
+                
                 if (pecasFiltradas.length > 0) {
                     const total = pecasFiltradas.reduce((acc, peca) => acc + peca.preco, 0);
                     const media = total / pecasFiltradas.length; // Calcula a média

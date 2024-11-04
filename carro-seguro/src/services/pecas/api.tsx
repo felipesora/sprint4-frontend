@@ -1,11 +1,11 @@
-const API_URL_PECAS = "http://localhost:8080/pecas"; // Altere para a URL correta da sua API
+const API_URL_PECAS = "http://localhost:8080/pecas"; 
 
 // Interface para as peças
 export interface Peca {
     idPeca: number;
     descricao: string;
     preco: number;
-    tpPecaProblema: string; // Propriedade obrigatória
+    tpPecaProblema: string; 
 }
 
 

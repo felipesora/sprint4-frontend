@@ -1,4 +1,3 @@
-// Arquivo: Cadastro/page.tsx
 "use client";
 
 import Link from "next/link";
@@ -16,7 +15,6 @@ export default function Cadastro() {
   async function handleCadastro(event: React.FormEvent) {
     event.preventDefault();
 
-    // Monta o objeto do usuário com as propriedades corretas
     const usuario = {
       emailUsuario: email,
       nmUsuario: nome,

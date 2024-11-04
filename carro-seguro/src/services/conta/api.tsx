@@ -1,4 +1,3 @@
-// src/services/api.tsx
 
 const API_URL = "http://localhost:8080/usuario";
 
@@ -7,15 +6,15 @@ export interface Usuario {
   emailUsuario: string;
   idUsuario: number;
   nmUsuario: string;
-  senhaUsuario: string; // Adicionando a senha
-  usCPF: string; // CPF deve ser uma string
+  senhaUsuario: string; 
+  usCPF: string; 
 }
 
 // Função para fazer o login
 export async function login(email: string, senha: string) {
   try {
     const response = await fetch(API_URL);
-    const usuarios: Usuario[] = await response.json(); // Definindo o tipo como Usuario
+    const usuarios: Usuario[] = await response.json(); 
 
     // Procura um usuário com o email e senha fornecidos
     const usuario = usuarios.find(

@@ -15,16 +15,16 @@ export default function Conta() {
 
     if (!userId) {
       alert("Usuário não logado. Redirecionando para a página de login.");
-      router.push("/"); // Redireciona para a página de login se o usuário não estiver logado
+      router.push("/"); 
       return;
     }
 
     async function fetchUsuario() {
       try {
-        // Garantindo que userId não seja null e convertendo para número
-        const idUsuario = userId ? parseInt(userId, 10) : 0; // Aqui estamos definindo um valor padrão caso não seja uma string válida.
         
-        const dadosUsuario = await obterUsuarioPorId(idUsuario); // Chama a função para buscar dados do usuário
+        const idUsuario = userId ? parseInt(userId, 10) : 0; 
+        
+        const dadosUsuario = await obterUsuarioPorId(idUsuario); 
         setUsuario(dadosUsuario);
       } catch (error) {
         console.error("Erro ao carregar os dados do usuário:", error);
@@ -39,7 +39,7 @@ export default function Conta() {
     return <p>Carregando...</p>;
   }
 
-  // Função para lidar com a exclusão da conta
+  
   async function handleExcluirConta() {
     if (confirm("Tem certeza de que deseja excluir sua conta? Esta ação não pode ser desfeita.")) {
       try {
@@ -50,10 +50,10 @@ export default function Conta() {
         }
 
         const idUsuario = parseInt(userId, 10);
-        await excluirUsuarioPorId(idUsuario); // Chama a função para excluir o usuário
-        localStorage.removeItem("userId"); // Remove o ID do usuário do localStorage
+        await excluirUsuarioPorId(idUsuario); 
+        localStorage.removeItem("userId"); 
         alert("Conta excluída com sucesso.");
-        router.push("/"); // Redireciona para a página inicial ou de login
+        router.push("/"); 
       } catch (error) {
         console.error("Erro ao excluir a conta:", error);
         alert("Erro ao excluir a conta. Tente novamente.");

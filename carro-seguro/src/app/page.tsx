@@ -1,10 +1,9 @@
-// src/app/page.tsx
 "use client";
 
 import Link from "next/link";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { login } from "../services/conta/api"; // Importa a função de login da API
+import { login } from "../services/conta/api"; 
 
 export default function Login() {
   const [email, setEmail] = useState("");
