@@ -84,7 +84,7 @@ Como a página de login é a primeira página do projeto e os dados de autentica
 
 - [Página Inicial](https://carro-seguro.vercel.app/pagina-inicial)
 
-## Link do repositório do projeto
+## Link Repositório do projeto
 
 - [Projeto](https://github.com/felipesora/sprint4-frontend?tab=readme-ov-file)
 
