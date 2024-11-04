@@ -1,15 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { obterUsuarioPorId, Usuario, excluirUsuarioPorId } from "../../services/conta/api"; // Importando a interface Usuario
+import { obterUsuarioPorId, Usuario, excluirUsuarioPorId } from "../../services/conta/api";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-// import Image from 'next/image';
 
-// import iconeEditar from "@/imagens/icone-editar.png";
 
 export default function Conta() {
-  const [usuario, setUsuario] = useState<Usuario | null>(null); // Utilizando a interface Usuario
+  const [usuario, setUsuario] = useState<Usuario | null>(null); 
   const router = useRouter();
 
   useEffect(() => {
