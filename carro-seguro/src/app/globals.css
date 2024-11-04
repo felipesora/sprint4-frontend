@@ -317,6 +317,45 @@ footer {
     @apply scale-110;
 }
 
+/* EDITAR CONTA */
+
+#container_main_editar_conta {
+    @apply bg-[var(--cor-quartenaria)] max-w-[95vw] mx-auto shadow-md rounded-md;
+}
+
+.titulo_editar_conta {
+    @apply text-[2.1rem] pt-[1%] pl-[2%];
+}
+
+.texto_conta {
+    @apply pt-[1%] pl-[2%] text-[1.3rem];
+}
+
+.ul_editar_conta {
+    @apply list-none pt-[2%] pl-[2%];
+}
+
+.ul_editar_conta > li {
+    @apply text-[1.6em] pb-[3%];
+    @apply flex flex-col; /* Alinha os rótulos e inputs em coluna */
+}
+
+.ul_editar_conta > li > label {
+    @apply mb-[0.5rem]; /* Espaço abaixo dos rótulos para separá-los dos inputs */
+}
+
+.input{
+    @apply rounded-[5px] border-2 border-gray-700;
+}
+
+.link_editar_conta {
+    @apply bg-[var(--cor-principal)] text-white inline-block relative ml-[2%] mb-[2%] py-[1%] px-[2%] rounded transition-transform duration-300;
+}
+
+.link_editar_conta:hover {
+    @apply scale-110;
+}
+
 /* Login */
 
 .container_login{
