@@ -19,10 +19,14 @@ O projeto consiste em quatro páginas principais:
 
 ### 2. Página de Diagnóstico
 
-- **Descrição**: Nesta página, os usuários podem descrever os problemas que estão enfrentando com seus carros e obter possíveis soluções oferecidas pela Porto Seguro.
+- **Descrição**: Nesta página, os usuários podem descrever problemas específicos que estão enfrentando com seus carros, selecionar o tipo de problema e obter uma estimativa de peças recomendadas e seus preços.
 - **Conteúdo**:
-  - Formulário para que o usuário insira os detalhes do problema do carro.
-  - Seção de resultados, onde é exibido uma mensagem da Porto que entrará em contato disponibilizando soluções sugeridas com base no problema descrito.
+  - **Formulário de Descrição**: Permite que o usuário insira uma descrição detalhada do problema que está enfrentando.
+  - **Seleção do Tipo de Problema**: Uma lista de opções onde o usuário pode escolher o tipo de problema (como motor, bateria, freio, etc.), o que ajuda a plataforma a recomendar peças relevantes.
+  - **Recomendação de Peças**: Após o envio do formulário, a plataforma exibe uma tabela com as peças recomendadas para o tipo de problema selecionado, incluindo a descrição e o preço de cada peça.
+  - **Orçamento Estimado**: Exibe o preço médio das peças recomendadas com base no problema selecionado, ajudando o usuário a ter uma ideia dos custos envolvidos.
+  - **Link para Oficinas Parceiras**: Inclui um link para que o usuário visualize as oficinas parceiras da Porto Seguro que podem realizar o reparo.
+  - **Mensagem de Confirmação**: Após o envio bem-sucedido do problema, uma mensagem de confirmação informa que a equipe da Porto Seguro entrará em contato para fornecer suporte e orientações adicionais.
 
 ### 3. Página de FAQ 
 
@@ -38,6 +42,22 @@ O projeto consiste em quatro páginas principais:
   - Formulário para envio de mensagens, onde o usuário pode inserir seu nome e mensagem para ser respondido pela equipe de suporte.
   - Mensagem de confirmação após o envio do formulário, indicando que a equipe da Porto Seguro entrará em contato em breve.
 
+### 5. Página de Oficinas Parceiras
+
+- **Descrição**: Esta página exibe uma lista de oficinas parceiras da Porto Seguro, organizadas em uma tabela com informações relevantes para facilitar a escolha de uma oficina próxima e adequada ao usuário.
+- **Conteúdo**:
+  - **Título**: Exibe o título "Oficinas Parceiras" para contextualizar o usuário sobre o conteúdo da página.
+  - **Tabela de Oficinas**:
+    - **Colunas**:
+      - **Nome da Oficina**: Nome da oficina parceira.
+      - **Endereço**: Endereço completo da oficina, permitindo ao usuário localizar o estabelecimento.
+      - **Zona**: Área ou região em que a oficina está localizada, ajudando o usuário a encontrar uma opção próxima.
+    - **Mensagens de Erro**: Caso ocorra algum problema ao carregar a lista de oficinas, uma mensagem de erro será exibida informando o usuário e sugerindo que tente novamente mais tarde.
+- **Funcionalidade**:
+  - **Carregamento Dinâmico**: A lista de oficinas é carregada dinamicamente por meio da função `listarOficinas`, permitindo que os dados sejam atualizados sem a necessidade de recarregar a página.
+  - **Estado de Erro**: Em caso de erro durante a obtenção das informações, uma mensagem de erro é exibida.
+
+
 ## Tecnologias Utilizadas
 
 - **React**: Utilizado para criar interfaces dinâmicas e reativas, facilitando o gerenciamento de componentes.
@@ -49,11 +69,21 @@ O projeto consiste em quatro páginas principais:
 
 ## Link do Protótipo no Figma
 
-- https://www.figma.com/design/dSlchMNlevMvUJ0w2wKeCD/Untitled?node-id=0-1&t=y3SuPG1Vu8edaTI2-1
+- [Figma](https://www.figma.com/design/dSlchMNlevMvUJ0w2wKeCD/Untitled?node-id=0-1&t=y3SuPG1Vu8edaTI2-1)
 
 ## Link do vídeo no Youtube
 
-- https://www.youtube.com/watch?v=aZStdvXt51w
+- [Vídeo](https://youtu.be/rHULYDNl3N4)
+
+## Link do Projeto Publicado na Vercel
+
+- [Carro Seguro - Projeto Porto Seguro](https://carro-seguro.vercel.app)
+
+### Observação
+Como a página de login é a primeira página do projeto e os dados de autenticação estão armazenados em uma API localhost, o login não pode ser realizado diretamente no ambiente publicado. Para acessar o projeto sem passar pela autenticação, adicione `/pagina-inicial` ao final da URL:
+
+- [Página Inicial](https://carro-seguro.vercel.app/pagina-inicial)
+
 
 ## Integrantes
 
