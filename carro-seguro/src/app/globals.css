@@ -196,3 +196,40 @@ footer {
 .faq_descritivo4 {
     @apply pb-[4%];
 }
+
+/* Contato */
+#box_icones {
+    @apply mt-[2%];
+}
+
+.flex_contato {
+    @apply flex items-center gap-5;
+}
+
+.flex_contato2 {
+    @apply mt-[1%];
+}
+
+.flex_contato > img {
+    @apply w-[4vw];
+}
+
+.flex_contato > p {
+    @apply text-[1.4rem];
+}
+
+#dados_contato {
+    @apply mt-[2%];
+}
+
+.texto_dados {
+    @apply text-[1.5rem];
+}
+
+#id_nome_usuario {
+    @apply w-[40vw] p-2.5 border-2 border-black rounded-md text-[1.1rem] mb-2;
+}
+
+#id_mensagem_usuario {
+    @apply w-[80vw] h-[15vh] p-5 border-2 border-black rounded-md text-[1.1rem] mb-2;
+}
