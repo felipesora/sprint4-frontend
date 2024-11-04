@@ -122,3 +122,72 @@ footer {
 .icone_li {
     @apply mr-1;
 }
+/* Diagnostico */
+
+#container_main {
+    @apply mt-[3%];
+}
+
+.header_diagnostico {
+    @apply mb-[3%];
+}
+
+.titulo_main, .subtitulo {
+    @apply mb-[1%];
+}
+
+.subtitulo {
+    @apply mt-[2%];
+}
+
+.descritivo {
+    @apply text-justify mb-[1%];
+}
+
+#id_relatar_problema {
+    @apply w-[85vw] h-[15vh] p-5 border-2 border-black rounded-md text-[1.1rem] mb-2;
+}
+
+.botao_enviar {
+    @apply my-[2%] bg-[var(--cor-principal)] p-5 w-[10vw] border-none rounded-lg text-[1.3rem] text-white font-bold cursor-pointer shadow-md transition-transform duration-300 ease-in-out;
+}
+
+.botao_enviar:hover {
+    @apply scale-110;
+}
+
+#resposta_botao {
+    @apply mt-[1%] mb-[2%] pb-[2%] text-justify;
+}
+
+.form_diagnostico {
+    @apply mt-[1%] ml-[2%];
+}
+
+.form_diagnostico label {
+    @apply text-[1.4rem];
+}
+
+.div_form {
+    @apply flex flex-col mt-[2%];
+}
+
+.div_form input {
+    @apply w-[50vw];
+}
+
+.div_form select {
+    @apply w-[20vw] mt-2;
+}
+
+.div_btn {
+    @apply mt-[2%];
+}
+
+.btn_enviar_problema{
+    @apply bg-[var(--cor-principal)] text-white inline-block relative mb-[2%] py-[1%] px-[2%] rounded transition-transform duration-300;
+}
+
+.btn_enviar_problema:hover {
+    @apply scale-110;
+}
