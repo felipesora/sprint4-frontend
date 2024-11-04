@@ -452,3 +452,34 @@ input {
 .button:hover {
     @apply scale-[1.1];
 }
+
+/* Tabela de diagnostico*/
+
+.subtitulo_tabela_pecas {
+    @apply ml-[2%] text-[2rem] pb-[2%]; 
+}
+
+.orçamento_pecas {
+    @apply ml-[2%] mt-[2%] text-[1.5rem] pb-[1%]; 
+}
+
+.mensagem_link_oficinas {
+    @apply ml-[2%] text-[1.2rem] pb-[1%]; 
+}
+
+#resposta_botao {
+    @apply ml-[2%] text-[1rem] pb-[2%]; 
+}
+
+.link_oficinas {
+    @apply relative no-underline transition-all duration-300 ease-in-out;
+}
+
+.link_oficinas::after {
+    content: '';
+    @apply absolute w-0 h-[2px] -bottom-1 right-0 bg-white transition-all duration-300 ease-in-out;
+}
+
+.link_oficinas:hover::after {
+    @apply w-full left-0 bg-black;
+}
