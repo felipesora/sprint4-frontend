@@ -44,7 +44,7 @@ header {
 .div_botoes_cabecalho {
   @apply flex items-center gap-2;
 }
-/Menu/
+/*Menu*/
 .ul_links {
     @apply flex list-none gap-[2%] pb-[1%] bg-[var(--cor-principal)] mb-[1%];
 }
@@ -270,4 +270,51 @@ footer {
 
 .link_github:hover::after {
     @apply w-full left-0 bg-[var(--cor-principal)];
+}
+
+/* Login */
+
+.container_login{
+    @apply bg-[var(--cor-quartenaria)] max-w-[70vw] mx-auto mt-[5%] rounded-[15px] shadow-[0px_2px_7px_rgba(0,0,0,0.185)];
+}
+
+.titulo_form {
+    @apply text-[var(--cor-principal)] text-center p-[10px] text-[3em];
+}
+
+.div_texto_login {
+    @apply mt-[2%] mx-[5%] text-[var(--cor-principal)] text-[1.2em] font-normal pb-[5%];
+}
+
+.link_form {
+    @apply relative no-underline text-[#688E99] transition-all duration-300 ease-in-out;
+}
+
+.link_form::after {
+    content: '';
+    @apply absolute w-0 h-[2px] block mt-[1px] right-0 bg-[#688E99] transition-all duration-300 ease-in-out;
+}
+
+.link_form:hover::after {
+    @apply w-full left-0 bg-[#688E99];
+}
+
+form {
+    @apply mt-[3%];
+}
+
+.texto_form {
+    @apply flex text-[1.8em] mt-[2%];
+}
+
+.input_login {
+    @apply w-[25vw] h-[5vh] text-[1.3em] pl-[1%] mt-[1%] border-2 border-gray-700;
+}
+
+.button {
+    @apply bg-[var(--cor-principal)] border-none text-white text-[1.7em] mt-[2%] p-[1.5%] w-[11vw] rounded-[20px] shadow-[0px_2px_7px_rgba(0,0,0,0.185)] transition-transform duration-300 ease-in-out;
+}
+
+.button:hover {
+    @apply scale-[1.1];
 }
