@@ -513,3 +513,9 @@ th {
 tbody tr:nth-child(even) {
     @apply bg-[#f9f9f9];
 }
+
+/* Página de erro 404 */
+
+.imagem_erro_404{
+    @apply m-auto py-[8%] w-[50vw]
+}
