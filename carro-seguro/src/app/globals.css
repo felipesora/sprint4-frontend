@@ -483,3 +483,33 @@ input {
 .link_oficinas:hover::after {
     @apply w-full left-0 bg-black;
 }
+
+/* Pagina de Oficinas */
+
+.container_oficinas {
+    @apply bg-[var(--cor-quartenaria)] max-w-[95vw] mx-auto shadow-[0px_2px_7px_rgba(0,0,0,0.185)] rounded-[5px] p-[20px];
+}
+
+.container_oficinas > h1 {
+    @apply text-[2rem] pb-[2%]; 
+}
+
+table {
+    @apply w-[80%] border-collapse bg-white shadow-lg mx-auto; 
+}
+
+table, th, td {
+    @apply border border-black; 
+}
+
+th, td {
+    @apply px-[10px] py-[10px] text-left; 
+}
+
+th {
+    @apply bg-[#f2f2f2] font-bold; 
+}
+
+tbody tr:nth-child(even) {
+    @apply bg-[#f9f9f9];
+}
