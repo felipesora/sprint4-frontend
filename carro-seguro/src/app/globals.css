@@ -191,3 +191,8 @@ footer {
 .btn_enviar_problema:hover {
     @apply scale-110;
 }
+
+/* faq */
+.faq_descritivo4 {
+    @apply pb-[4%];
+}
