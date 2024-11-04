@@ -318,3 +318,53 @@ form {
 .button:hover {
     @apply scale-[1.1];
 }
+
+/* Cadastro */
+.container_cadastro {
+    @apply bg-[var(--cor-quartenaria)] max-w-[70vw] mx-auto mt-[5%] mb-[2%] rounded-[15px] shadow-[0px_2px_7px_rgba(0,0,0,0.185)];
+}
+
+.titulo_form_cadastro {
+    @apply text-[var(--cor-principal)] text-center p-[10px] text-[3em];
+}
+
+.div_texto_cadastro {
+    @apply mt-[2%] mx-[5%] text-[var(--cor-principal)] text-[1.2em] font-normal pb-[5%];
+}
+
+.link_form_cadastro {
+    @apply relative no-underline text-[#688E99] transition-all duration-300 ease-in-out;
+}
+
+.link_form_cadastro::after {
+    content: '';
+    @apply absolute w-0 h-[2px] block mt-[1px] right-0 bg-[#688E99] transition-all duration-300 ease-in-out;
+}
+
+.link_form_cadastro:hover::after {
+    @apply w-full left-0 bg-[#688E99];
+}
+
+form {
+    @apply mt-[3%];
+}
+
+.texto_form_cadastro {
+    @apply flex text-[1.8em] mt-[2%];
+}
+
+input {
+    @apply w-[35vw] h-[5vh] text-[1.3em] pl-[1%] mt-[1%];
+}
+
+.campos_obrigatorios {
+    @apply text-black text-[1rem];
+}
+
+.button {
+    @apply bg-[var(--cor-principal)] border-none text-white text-[1.7em] mt-[3%] p-[2%] w-[15vw] rounded-[20px] shadow-[0px_2px_7px_rgba(0,0,0,0.185)] transition-transform duration-300 ease-in-out;
+}
+
+.button:hover {
+    @apply scale-[1.1];
+}
