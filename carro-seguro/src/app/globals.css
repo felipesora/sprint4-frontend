@@ -61,3 +61,11 @@ header {
 .links:hover::after {
     @apply w-full left-0 bg-white;
 }
+/* Rodape */
+footer {
+    @apply mt-[3%] bg-[var(--cor-principal)] py-[2%] flex flex-col items-center shadow-md;
+}
+
+.copyright {
+    @apply mt-[2%] text-white text-sm;
+}
