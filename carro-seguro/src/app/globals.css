@@ -233,3 +233,41 @@ footer {
 #id_mensagem_usuario {
     @apply w-[80vw] h-[15vh] p-5 border-2 border-black rounded-md text-[1.1rem] mb-2;
 }
+
+/* Integrantes */
+.integrante {
+    @apply bg-white mt-[2%] p-2.5 w-[32vw] rounded-md shadow-md;
+}
+
+#container_main_integrantes {
+    @apply bg-[var(--cor-quartenaria)] max-w-[95vw] mx-auto shadow-md rounded-md;
+}
+
+.imagem_dados {
+    @apply flex gap-2.5;
+}
+
+.imagem_dados img {
+    @apply w-[13vw];
+}
+
+.dados_integrante {
+    @apply text-[1.2rem] flex flex-col gap-5;
+}
+
+#container_integrantes {
+    @apply py-[2%] pl-[2%];
+}
+
+.link_github {
+    @apply relative no-underline text-[var(--cor-principal)] transition-all duration-300 ease-in-out;
+}
+
+.link_github::after {
+    content: '';
+    @apply absolute w-0 h-[2px] -bottom-1 right-0 bg-[var(--cor-principal)] transition-all duration-300 ease-in-out;
+}
+
+.link_github:hover::after {
+    @apply w-full left-0 bg-[var(--cor-principal)];
+}
